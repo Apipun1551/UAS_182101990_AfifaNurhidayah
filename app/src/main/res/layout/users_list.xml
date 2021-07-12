@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:scaleType="fitXY"
+            android:background="#f0f0f0"
+            android:layout_below="@+id/tvId"
+            android:layout_toLeftOf="@id/tvId"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+        <ImageView
+            android:id="@+id/iv_icon2"
+            android:scaleType="fitXY"
+            android:background="#f9f9f9"
+            android:layout_below="@+id/tvId"
+            android:layout_toLeftOf="@id/tvId"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvId"
+            android:textSize="15sp"
+            android:hint="ID"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvFirstName"
+            android:textSize="15sp"
+            android:hint="First Name"
+            android:textStyle="bold"
+            android:layout_below="@id/tvId">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLastName"
+            android:textSize="15sp"
+            android:hint="Last Name"
+            android:textStyle="bold"
+            android:layout_below="@id/tvFirstName">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEmail"
+            android:textSize="15sp"
+            android:hint="Email"
+            android:textStyle="bold"
+            android:layout_below="@id/tvLastName">
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/iv_icon"
+            android:layout_marginTop="5dp"
+            android:background="@color/design_default_color_primary"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
